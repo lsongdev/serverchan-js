@@ -1,0 +1,25 @@
+{
+  "name": "@song940/serverchan",
+  "version": "0.0.0",
+  "description": "ServerChan API for Node.js",
+  "main": "serverchan.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/song940/node-serverchan.git"
+  },
+  "keywords": [
+    "serverchan"
+  ],
+  "author": "Lsong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/song940/node-serverchan/issues"
+  },
+  "homepage": "https://github.com/song940/node-serverchan#readme"
+}
