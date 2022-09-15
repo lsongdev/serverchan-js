@@ -2,7 +2,7 @@ const https = require('https');
 const assert = require('assert');
 
 const {
-  SERVERCHAN_API,
+  SERVERCHAN_API = 'https://sctapi.ftqq.com',
   SERVERCHAN_SENDKEY,
 } = process.env;
 
@@ -22,7 +22,7 @@ const readStream = res => new Promise((resolve, reject) => {
  * https://sct.ftqq.com
  */
 class ServerChan {
-  constructor({ api = SERVERCHAN_API || 'https://sctapi.ftqq.com', sckey = SERVERCHAN_SENDKEY }) {
+  constructor({ api = SERVERCHAN_API, sckey = SERVERCHAN_SENDKEY }) {
     assert.ok(api);
     assert.ok(sckey);
     this.api = api;
