@@ -6,6 +6,9 @@
   "directories": {
     "example": "example"
   },
+  "bin": {
+    "serverchan": "bin/serverchan.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

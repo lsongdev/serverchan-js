@@ -22,9 +22,9 @@ const readStream = res => new Promise((resolve, reject) => {
  * https://sct.ftqq.com
  */
 class ServerChan {
-  constructor({ api = SERVERCHAN_API, sckey = SERVERCHAN_SENDKEY }) {
+  constructor({ api = SERVERCHAN_API, sckey = SERVERCHAN_SENDKEY } = {}) {
     assert.ok(api);
-    assert.ok(sckey);
+    assert.ok(sckey, "must provide a sckey");
     this.api = api;
     this.sckey = sckey;
   }
